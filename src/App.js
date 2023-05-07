@@ -66,7 +66,7 @@ function App() {
               <li>Home</li>
               <li>About</li>
               <li>Shop</li>
-              <li className='but'><span class="material-symbols-outlined">
+              <li className='but'><span className="material-symbols-outlined">
 shopping_cart
 </span><button className='count'>{cartcount}</button></li>
             </ul>
@@ -119,10 +119,10 @@ function ProductCard({productimage, productmodel, productprice, rating, cartcoun
       />
       <div className='content'>
         <h4>{productmodel}</h4>
-        <p><span id="go" class="material-symbols-outlined">
+        <p><span id="go" className="material-symbols-outlined">
         currency_rupee
         </span><span className='price'>{productprice}</span></p>
-        <p className='rating'><span id="ratingid" class="material-symbols-outlined">
+        <p className='rating'><span id="ratingid" className="material-symbols-outlined">
 star_rate
 </span><span>{rating}</span></p>
       </div>
