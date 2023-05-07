@@ -7,37 +7,43 @@ const data = [
   productImage : "https://rukminim1.flixcart.com/image/416/416/xif0q/computer/7/3/l/-original-imagha3pvvc2xuz2.jpeg?q=70",
   productNmae : "MSI Bravo 15",
   productprice : 47990,
-  rating : 4.4
+  rating : 4.4,
+  id:1
 },
 {
   productImage : "https://rukminim1.flixcart.com/image/416/416/l4oi4cw0/computer/i/n/e/a715-5g-gaming-laptop-acer-original-imagfj2g954wfdyz.jpeg?q=70",
   productNmae : "Acer Aspier 7",
   productprice : 52900,
-  rating : 4.3
+  rating : 4.3,
+  id:2
 },
 {
   productImage : "https://rukminim1.flixcart.com/image/416/416/l3vxbbk0/computer/g/u/y/-original-imagewgtfgzf8fdd.jpeg?q=70",
   productNmae : "ASUS ROG Strix G15",
   productprice : 84990,
-  rating : 4.4
+  rating : 4.4,
+  id:3
 },
 {
   productImage : "https://rukminim1.flixcart.com/image/416/416/xif0q/computer/s/o/f/16-e0650ax-gaming-laptop-hp-original-imagkzqetd9hbwru.jpeg?q=70",
   productNmae : "HP Victus",
   productprice : 60990,
-  rating : 3.9
+  rating : 3.9,
+  id:4
 },
 {
   productImage : "https://rukminim1.flixcart.com/image/416/416/kzn17680/computer/1/i/z/-original-imagbhzqahdzyx4e.jpeg?q=70",
   productNmae : "HP OMEN",
   productprice : 68048,
-  rating : 4.4
+  rating : 4.4,
+  id:5,
 },
 {
   productImage : "https://rukminim1.flixcart.com/image/416/416/xif0q/computer/g/8/z/-original-imaghzahbkhsvhyb.jpeg?q=70",
   productNmae : "Dell Gaming",
   productprice : 68990,
-  rating : 3.9
+  rating : 3.9,
+  id:6
 }
 
 
@@ -74,7 +80,7 @@ shopping_cart
       <div className='Detail'>
       {data.map((prod, indx)=>(
         <ProductCard 
-        key = {indx.id}
+        key = {prod.id}
         productimage = {prod.productImage}
         productmodel = {prod.productNmae}
         productprice = {prod.productprice}
